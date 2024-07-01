@@ -12,6 +12,7 @@ mainwrapper {
   flex-direction: column;
   gap: 12rem;
   margin-bottom: 12rem;
+  align-items: center;
 }
 
 .header {
@@ -81,7 +82,7 @@ mainwrapper {
 }
 
 main {
-  height: 9840px;
+  min-height: 100vh;
 }
 .questionButton {
   width: 45px;
