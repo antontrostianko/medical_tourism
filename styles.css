@@ -7,12 +7,12 @@
   padding: 0 14rem 0 14rem;
 }
 
-mainwrapper {
+.mainwrapper {
   display: flex;
   flex-direction: column;
   gap: 12rem;
-  margin-bottom: 12rem;
   align-items: center;
+  margin-bottom: 12rem;
 }
 
 .header {
@@ -81,9 +81,40 @@ mainwrapper {
   transition-duration: 0.2s;
 }
 
-main {
+/* main {
   min-height: 100vh;
+} */
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  text-align: center;
+  width: 80%;
 }
+
+.newsletter__form {
+  height: 20rem;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+
+.newsletter__form-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.newsletter__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
 .questionButton {
   width: 45px;
   height: 45px;
