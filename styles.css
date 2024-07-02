@@ -88,31 +88,76 @@
 .newsletter {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
   text-align: center;
-  width: 80%;
 }
 
 .newsletter__form {
-  height: 20rem;
-  background-color: aquamarine;
+  padding: 32px;
+  width: 100%;
+  max-width: 760px;
+  background-color: hsl(0, 0%, 96%);
   align-items: center;
   justify-content: space-between;
-  border-radius: 60px;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 0 2rem;
+  gap: 12px;
 }
 
 .newsletter__form-title {
-  font-size: 20px;
-  font-weight: 500;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 12px;
 }
 
-.newsletter__title {
-  font-size: 36px;
+.newsletter__form-input {
+  border: 1px solid hsl(0, 0%, 73%);
+  border-radius: 20px;
+  display: flex;
+}
+
+.newsletter__form-input input {
+  font-size: 14px;
+  color: black;
+  justify-content: flex-start;
+  height: 40px;
+  width: 310px;
+  padding: 0 19px;
+  border-radius: 20px;
+}
+
+.newsletter__form-input input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+}
+.newsletter__form-button {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #bababa;
+  border-radius: 20px;
+}
+
+.newsletter__form-button button {
+  height: 40px;
+  padding: 0 19px;
   font-weight: 700;
+  font-size: 14px;
+  border-radius: 20px;
+}
+.newsletter__form-button button:hover {
+  background-color: #1f87ff;
+  transition-duration: 0.2s;
+  color: white;
+}
+
+.newsletter__caption {
+  font-size: 12px;
+  margin-top: 12px;
+  color: #bababa;
 }
 
 .questionButton {
@@ -137,6 +182,51 @@
 }
 .questionButton:hover {
   cursor: pointer;
+}
+
+.FAQ_title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.question {
+  width: 960px;
+  height: 35px;
+  background: #2e75b8;
+  margin-left: 8rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+}
+.question p {
+  font-family: "Comfortaa", sans-serif;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+p {
+  margin-top: 0px;
+}
+.question a {
+  font-family: "Comfortaa", sans-serif;
+  margin-right: 1rem;
+  padding-top: 0.1rem;
+  margin-left: auto;
+  font-size: 32px;
+}
+.question a:hover {
+  cursor: pointer;
+}
+
+.question_extended {
+  width: 930px;
+  height: 493px;
+  margin-left: 9.5rem;
+  background: rgb(196, 196, 196);
+  display: none;
+}
+.question_extended p {
+  padding: 4rem;
 }
 
 .wrapperFooter {
