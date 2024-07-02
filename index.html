@@ -20,7 +20,7 @@
         <nav class='header__nav'">
         <ul class = "header__nav-menu">
           <li><a href="#about">О нас</a></li>
-          <li><a href="#adv">Преимущества</a></li>
+          <li><a href="#advan">Преимущества</a></li>
           <li><a href="#services">Направления лечения</a></li>
           <li><a href="#form">Оставить заявку</a></li>
         </ul>
@@ -32,7 +32,29 @@
       
     </header>
     <main>
-      <img src="assets\question.png" alt="" class='questionButton'>
+      <a href="#overlay" onclick="location.href='#overlay'"><img src="assets\question.png" alt="" class='questionButton'></a>
+      <div class='overlay' id='overlay'>
+        <form class='modal__wrapper'>
+          <p class=modal__title>Оставьте сообщение и мы <br>
+            обязательно с вами свяжемся!</p>
+            <div class=modal__field>
+              <label for="modal_name">Ваше имя</label>
+              <input name="modal_name" id="modal_name" size='34' required></input>
+            </div>
+            <div class=modal__field>
+              <label for="modal_email">Ваш E-mail</label>
+              <input name="modal_email" id="modal_email" type='email' size='34' required></input>
+            </div>    
+            <div class=modal__field>
+              <label for="modal_question">Ваш вопрос</label>
+              <textarea name="modal_question" id="modal_question" cols="30" rows="3"></textarea>
+            </div>
+            <button class='modal__button'>Отправить</button>
+            
+            <a class="close" href="#">×</a>
+          </form>
+      </div>
+
       <div class='mainwrapper'>
         <div id="start" class='start'></div>
         <div class='slider wrapper'></div>
@@ -46,12 +68,37 @@
         <div id="about" class='about wrapper'>
           <div class = 'about__title'><h1>О нас</h1></div>
           <div class="about__content">
-          <div class = 'about__content-pic'><img src="./assets/about-pic.png" alt=""></div>
+          <div class = 'about__content-pic'><img src="./assets/about-pic.jpg" alt=""></div>
           <div class="about__content-text"><p>Медицинский туризм в Беларуси с каждым годом становится все более востребованным и популярным. Гости нашей страны могут совместить отдых с получением высококвалифицированной помощи в лучших медицинских центрах и клиниках, пройти курсы реабилитации и оздоровления в санаториях Беларуси.</p></div>
           </div>
         </div>
-        <div class='client-map wrapper'></div>
-        <div id="adv wrapper" class='adv wrapper'>
+        <div class='client-map wrapper'>
+          <div class="client-map__title"><h1>Как это работает?</h1></div>
+          <div class="client-map__first-part">
+            <div class="client-map__image-block">
+              <img src="" alt="">
+            </div>
+            <div class="client-map__first-arrow-block">
+              <div class="client-map__first-arrow"></div>
+            </div>
+            <div class="first__text-block">
+              <p class="first__text">Вы оставляете заявку на сайт</p>
+            </div>
+          </div>
+
+          <div class="client-map__second-part">
+            <div class="second__text-block">
+              <p class="second__text">Менеджер с вами связывается для уточнения деталей</p>
+            </div>
+            <div class="client-map__second-arrow-block">
+              <div class="client-map__second-arrow"></div>
+            </div>
+            <div class="client-map__image-block">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div id="advan" class='adv wrapper'>
           <div class="adv__title"><h1>Преимущества</h1></div>
           <div class ="adv__first-block">
               <div class="adv__first-block-elem"><img src="assets/adv/a1.svg" alt=""><p>Индивидуальный подход -
@@ -81,7 +128,7 @@
               </div>
           </div>
         </div>
-        <div id="services wrapper" class='services'>
+        <div id="services" class='services wrapper'>
           <div class="services__title"><h1>Направления лечения</h1></div>
             <div class="services__three-block" >
                 <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/1.png')">
@@ -158,7 +205,18 @@
                 </div></a>
             </div>
         </div>
-        <div class='reviews wrapper'>h</div>
+        <div class='reviews wrapper'>
+          <div class="client-map__title"><h1>Отзывы</h1></div>
+          <div class="reviews__content">
+            <div class="reviews__text-block">
+              <p class="reviews__text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing  elit. Tempora dolor sequi illo, numquam porro voluptas laudantium quidem quis suscipit temporibus minima? Perspiciatis excepturi dolorem rem quibusdam expedita incidunt adipisci fugiat?</p>
+            </div>
+            <div class="reviews__video">
+              <iframe width="620" height="350" src="https://www.youtube.com/embed/AQg0QJCwtR8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - ОТЗЫВ / Стоматология в Минске / Лечить зубы/ Кариес" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        
 
         <div id="form" class='form wrapper'>
           <h2 class='form__title'>Оставить заявку</h2>
@@ -193,7 +251,7 @@
               </div>
               <div class='form__wrapper-column-field'>
                 <label for="service">Направление<br>лечения</label>
-                <input type="text" id='service' size="28">
+                <input type="text" id='service' size="28" required>
               </div>
               <div class='form__wrapper-column-field'>
                 <label for="file">Прикрепить<br>файлы</label>
@@ -214,32 +272,32 @@
         <div class='FAQ wrapper'>
           <h1 class="FAQ_title">Часто задаваемые вопросы</h1>
         <div class="group_question">
-            <div class="question"> 
-                <p>Вопрос 1</p> <a class="clickable">+</a> 
+            <div class="question" style="border-top-left-radius:15px;  border-top-right-radius:15px;" > 
+                <p>Вопрос 1</p> <a class="clickable">▼</a> 
             </div>
             <div class="question_extended">
                 <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
             </div>
             <div class="question"> 
-                <p>Вопрос 2</p> <a class="clickable">+</a>
+                <p>Вопрос 2</p> <a class="clickable">▼</a>
             </div>
             <div class="question_extended">
                 <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
             </div>
             <div class="question"> 
-                <p>Вопрос 3</p> <a class="clickable">+</a>
+                <p>Вопрос 3</p> <a class="clickable">▼</a>
             </div>
             <div class="question_extended">
                 <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
             </div>
             <div class="question"> 
-                <p>Вопрос 4</p> <a class="clickable">+</a>
+                <p>Вопрос 4</p> <a class="clickable">▼</a>
             </div>
             <div class="question_extended">
                 <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
             </div>
-            <div class="question"> 
-                <p>Вопрос 5</p> <a class="clickable">+</a>
+            <div class="question" style="border-bottom-left-radius:15px;  border-bottom-right-radius:15px;"> 
+                <p>Вопрос 5</p> <a class="clickable">▼</a>
             </div>
             <div class="question_extended">
                 <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>

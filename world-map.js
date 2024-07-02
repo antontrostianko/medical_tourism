@@ -26,7 +26,7 @@ d3.json("world-110m.v1.json").then(function (world) {
     ["036", "Австралия"],
     ["112", "Беларусь"],
   ]);
-
+  const belarus = new Map([["112", "Беларусь"]]);
   svg
     .selectAll(".world-map_country")
     .data(countries)
@@ -35,7 +35,9 @@ d3.json("world-110m.v1.json").then(function (world) {
     .attr("class", "world-map_country")
     .attr("d", path)
     .each(function (d) {
-      if (highlightedCountries.has(String(d.id))) {
+      if (belarus.has(String(d.id))) {
+        d3.select(this).classed("world-map_belarus", true);
+      } else if (highlightedCountries.has(String(d.id))) {
         d3.select(this).classed("world-map_highlighted", true);
       }
     })
