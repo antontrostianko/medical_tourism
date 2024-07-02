@@ -36,7 +36,7 @@ emailInput.addEventListener("input", () => {
     submitButton.disabled = false;
     submitButton.style.backgroundColor = "#1F87FF"; // Голубой цвет
     submitButton.style.color = "white";
-    submitButton.style.border-
+    //submitButton.style.border-
   } else {
     submitButton.disabled = true;
     submitButton.style.backgroundColor = ""; // Сбрасываем цвет

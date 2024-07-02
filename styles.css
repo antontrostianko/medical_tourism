@@ -183,6 +183,45 @@
 .questionButton:hover {
   cursor: pointer;
 }
+.world-map_title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5rem;
+}
+.world-map_title b,
+.world-map_title u {
+  font-size: inherit; /* Inherit font size from parent .world-map_title */
+}
+#world-map_map {
+  border: 1px solid black;
+}
+.world-map_copyright {
+  font-size: 10px;
+}
+.world-map_country {
+  fill: lightgray;
+  stroke: #fff;
+  stroke-width: 0.2px;
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.world-map_highlighted {
+  fill: green;
+}
+.world-map_selected {
+  stroke: black;
+  stroke-width: 1.2px;
+}
+.world-map_tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
 .FAQ_title {
   text-align: center;
