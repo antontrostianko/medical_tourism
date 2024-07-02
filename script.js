@@ -33,3 +33,33 @@ clickables.forEach((elem, index) => {
     bod.style.height = main_height + "px";
   });
 });
+
+const maxHeight = document.getElementsByTagName("body");
+let currentHeight = 500;
+const advTitle = document.querySelector(".adv__title");
+line.style.height = currentHeight + scrollY + "px";
+document.addEventListener("scroll", function () {
+  const line = document.getElementById("line");
+  const scrollY = window.scrollY || window.pageYOffset;
+  if (scrollY > maxHeight) {
+    scrollY = maxHeight;
+  }
+  line.style.height = currentHeight + scrollY + "px";
+  const rect = advTitle.getBoundingClientRect();
+  if (rect.bottom < 800 && rect.bottom > 0) {
+    const distanceToCircle = rect.top - window.innerHeight / 2; // Adjust window.innerHeight as needed
+
+    if (distanceToCircle > 0) {
+      // Delay showing circle based on the distance
+      setTimeout(function () {
+        circle.style.display = "block";
+        circle.style.animationPlayState = "running";
+      }, distanceToCircle + 1000);
+    } else {
+      circle.style.display = "block"; // Show immediately if already past the threshold
+      circle.style.animationPlayState = "running";
+    }
+  } else {
+    circle.style.display = "none";
+  }
+});
