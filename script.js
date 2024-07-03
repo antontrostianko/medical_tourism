@@ -63,3 +63,10 @@ document.addEventListener("scroll", function () {
     circle.style.display = "none";
   }
 });
+
+const cookie_button = document.querySelector(".cookie-popup__button");
+const cookie_popup = document.querySelector("#cookie-popup");
+
+cookie_button.addEventListener("click", function () {
+  cookie_popup.style.display = "None";
+});

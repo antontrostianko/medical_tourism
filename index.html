@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="nullstyle.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
   </head>
   <body>
     <header class='header wrapper'>
@@ -32,9 +33,20 @@
       
     </header>
     <main>
+      <div id="cookie-popup"> 
+        <p> 
+            Мы используем файлы cookies для улучшения работы сайта.
+            <br>Оставаясь на нашем сайте, вы соглашаетесь с условиями 
+            использования файлов cookies.
+        </p> 
+        <button class="cookie-popup__button"> 
+            Принять
+        </button> 
+    </div> 
       
-        <div class="animated-line" id="line"></div>
-        <div id="circle"></div>
+      <div class="animated-line" id="line"></div>
+      <div id="circle"></div>
+
       <a href="#overlay" onclick="location.href='#overlay'"><img src="assets\question.png" alt="" class='questionButton'></a>
       <div class='overlay' id='overlay'>
         <form class='modal__wrapper'>
