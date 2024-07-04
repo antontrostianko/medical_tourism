@@ -7,7 +7,7 @@
 
 .client-map__first-part {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   width: 117rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -22,7 +22,7 @@
 
 .first__text-block {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 500px;
 }
 
@@ -44,14 +44,14 @@
 
 .client-map__second-part {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   width: 117rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .client-map__second-arrow-block {
-  height: 250px;
+  height: 300px;
   width: 165px;
 }
 
@@ -65,7 +65,7 @@
 
 .second__text-block {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 500px;
 }
 
@@ -87,20 +87,20 @@
 
 .client-map__third-part {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   width: 117rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .client-map__third-arrow-block {
-  height: 250px;
+  height: 300px;
   width: 165px;
 }
 
 .third__text-block {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 500px;
 }
 
@@ -123,20 +123,20 @@
 
 .client-map__fourth-part {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   width: 117rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .client-map__fourth-arrow-block {
-  height: 250px;
+  height: 300px;
   width: 165px;
 }
 
 .fourth__text-block {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 500px;
 }
 
@@ -159,7 +159,7 @@
 
 .client-map__fifth-part {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   width: 117rem;
   font-weight: bold;
   margin-bottom: 22rem;
@@ -167,7 +167,7 @@
 
 .fifth__text-block {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 500px;
 }
 
