@@ -39,7 +39,8 @@
 }
 
 .client-map__first-arrow {
-  margin-top: 22rem;
+  margin-top: 30rem;
+  margin-left: 3rem;
 }
 
 .client-map__second-part {
@@ -82,7 +83,7 @@
 }
 
 .client-map__second-arrow {
-  margin-top: 22rem;
+  margin-top: 23rem;
 }
 
 .client-map__third-part {
