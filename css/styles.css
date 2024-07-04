@@ -156,10 +156,9 @@
   background-color: #1b7e2b; 
 }
 .slider-container {
+  box-sizing: border-box;
   position: relative;
   margin-top: 2rem;
-  margin-left: 14rem;
-  margin-right: 14rem;
   min-height: 40rem;
   width: 140rem;
   overflow: hidden; 
@@ -168,6 +167,7 @@
   -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
   box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
 }
+
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
