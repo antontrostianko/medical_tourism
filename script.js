@@ -36,48 +36,24 @@ clickables.forEach((elem, index) => {
 
 const maxHeight = document.getElementsByTagName("body");
 let currentHeight = 550;
-const advTitle = document.querySelector(".adv__title");
-const aboutTitle = document.querySelector(".about__title");
 line.style.height = currentHeight + scrollY + "px";
 document.addEventListener("scroll", function () {
   const line = document.getElementById("line");
+  const arrow = document.getElementById("arrow");
   const scrollY = window.scrollY || window.pageYOffset;
   if (scrollY > maxHeight) {
     scrollY = maxHeight;
   }
   line.style.height = currentHeight + scrollY + "px";
-  const advPos = advTitle.getBoundingClientRect();
-  if (advPos.bottom < 1000 && advPos.bottom > -200) {
-    const distanceToCircle = advPos.top - window.innerHeight / 2;
-    if (distanceToCircle > 0) {
-      setTimeout(function () {
-        circle.style.display = "block";
-        circle.style.animationPlayState = "running";
-      }, distanceToCircle);
-    } else {
-      circle.style.display = "block";
-      circle.style.animationPlayState = "running";
-    }
-  } else {
-    circle.style.display = "none";
-  }
-  const aboutPos = aboutTitle.getBoundingClientRect();
-  if (aboutPos.bottom < 800 && aboutPos.bottom > 0) {
-    const distanceToCircle2 = aboutPos.top - window.innerHeight / 2;
-    if (distanceToCircle2 > 0) {
-      setTimeout(function () {
-        circle2.style.display = "block";
-        circle2.style.animationPlayState = "running";
-      }, distanceToCircle2);
-    } else {
-      circle2.style.display = "block";
-      circle2.style.animationPlayState = "running";
-    }
-  } else {
-    circle2.style.display = "none";
-  }
+  arrow.style.top = currentHeight + scrollY + 270 + "px"; // Position arrow 20px below the line
 });
-
+document.addEventListener("DOMContentLoaded", function () {
+  const arrow = document.getElementById("arrow");
+  setTimeout(() => {
+    arrow.style.display = "block";
+    arrow.style.top = currentHeight + scrollY + 270 + "px"; // Adjust as needed
+  }, 500); // Delay of 1 second
+});
 const cookie_button = document.querySelector(".cookie-popup__button");
 const cookie_popup = document.querySelector("#cookie-popup");
 
