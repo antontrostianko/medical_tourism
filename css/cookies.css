@@ -21,14 +21,12 @@
   font-size: 12px;
 }
 
-
-
 #cookie-popup button {
   margin-top: 15px;
   color: black;
-  border: 1px solid black;
   padding: 10px 25px;
-  color: #21a038;
+  color: white;
+  background-color: #2e75b8;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -36,7 +34,7 @@
 }
 
 #cookie-popup button:hover {
-  background-color: #2e75b8;
+  background-color: #21a038;
   color: white;
   transition-duration: 0.2s;
 }
@@ -55,7 +53,6 @@
   }
 }
 
-
 @keyframes showDiv {
   0% {
     opacity: 0%;
@@ -67,5 +64,3 @@
     opacity: 100%;
   }
 }
-
-
