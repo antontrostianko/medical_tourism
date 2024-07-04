@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .client-map__first-part {
@@ -40,7 +41,6 @@
 
 .client-map__first-arrow {
   margin-top: 30rem;
-  margin-left: 3rem;
 }
 
 .client-map__second-part {
