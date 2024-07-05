@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cookies.css" />
     <link rel="stylesheet" href="css/nullstyle.css" />
     <link rel="stylesheet" href="css/modal.css">
@@ -26,6 +27,7 @@
   </head>
   <body>
     <header class='header wrapper'>
+      <div class="burger"><span></span></div>
         <div class='header__logo'>
           <div class='header__logo-img'><a href="#start"><img src="assets\header-logo.png" alt=""></a></div>
           <div class='header__logo-text'><p>МЕДИЦИНСКИЙ<br>ТУРИЗМ</p></div>
@@ -198,7 +200,7 @@
 
         <div class="client-map__second-part">
           <div class="second__text-block">
-            <p class="client-map__text2">Вы оставляете заявку <br> на сайте</p>
+            <p class="client-map__text">Вы оставляете заявку <br> на сайте</p>
           </div>
           <div class="client-map__second-arrow-block">
             <img class="client-map__second-arrow" src="./assets/arrows/a__second.svg" alt="second-arr">
@@ -222,7 +224,7 @@
 
         <div class="client-map__fourth-part">
           <div class="fourth__text-block">
-            <p class="client-map__text2">Мы БЕСПЛАТНО готовим  для Вас план лечения</p>
+            <p class="client-map__text">Мы БЕСПЛАТНО готовим  для Вас план лечения</p>
           </div>
           <div class="client-map__fourth-arrow-block">
             <img class="client-map__second-arrow" src="./assets/arrows/a__fourth.svg" alt="fourth-arr">
@@ -426,7 +428,16 @@
                 <p>Почему иностранные граждане приезжают на лечение в Беларусь?</p> <a class="clickable">▼</a>
             </div>
             <div class="question_extended">
-                <p>Медицинский туризм в Беларуси с каждым годом становится все более востребованным и популярным. Страна достаточно давно принимает иностранцев, которые решили сделать сложную операцию или пройти эффективный курс лечения именно у наших специалистов. За последние годы Республика Беларусь зарекомендовала себя одним самых перспективных направлений по медицинскому туризму в СНГ. </p>
+                <p>Медицинский туризм в Беларуси с каждым годом становится все более востребованным и популярным. 
+                  Страна достаточно давно принимает иностранцев, которые решили сделать сложную операцию или пройти 
+                  эффективный курс лечения именно у наших специалистов. За последние годы Республика Беларусь зарекомендовала 
+                  себя одним самых перспективных направлений по медицинскому туризму в СНГ. 
+                  <br>&emsp;Нашей стране отдают предпочтение, потому что:
+                  <br>&emsp;1) Беларусь является политически стабильным государством с удобным географическим положением и умеренным климатом, не требующим акклиматизации.
+                  <br>&emsp;2) Мы имеем квалифицированный персонал, стажирующийся в ведущих клиниках мира.
+                  <br>&emsp;3) В медицинских учреждениях и санаториях нашей страны используются передовые технологии и прогрессивные методики лечения.
+                  <br>&emsp;4) Система здравоохранения Беларуси предоставляет качественное медицинское обслуживание со сравнительно небольшой стоимостью услуг.
+                  <br>&emsp;5) Для удобства пребывания гостей действует безвизовый режим.</p>
             </div>
             <div class="question"> 
                 <p>Как узнать продолжительность лечения в Беларуси?</p> <a class="clickable">▼</a>
@@ -470,11 +481,12 @@
 
       <div class='footer__contacts'>
         <p class='footer__contacts-title'>КАК С НАМИ СВЯЗАТЬСЯ</p>
-        <p>📞 131 (Республика Беларусь)</p>
-        <p>📞 +375(29) 341-01-31 (Viber, WhatsApp, Telegram)</p>
-        <p>📞 +375(17) 243-41-43 (международный туризм)</p>
-        <p>📞 +375(29) 341-01-31 (Viber, WhatsApp, Telegram)</p>
-        <p>✉︎ doctor@131.by</p>
+        <p class="tel131RB">📞 131 (Республика Беларусь)</p>
+        <p class="tel131">📞 131</p>
+        <p class="tel291">📞 +375(29) 341-01-31 (Viber, WhatsApp, Telegram)</p>
+        <p class="tel17">📞 +375(17) 243-41-43 (международный туризм)</p>
+        <p class="tel292">📞 +375(29) 341-01-31 (Viber, WhatsApp, Telegram)</p>
+        <p class="maildoc">✉︎ doctor@131.by</p>
       </div>
       <div class='footer__socials'>
         <div class='footer__lang-switch'>
@@ -483,6 +495,14 @@
         </div>
           <div class='footer__socials-text'><p>Социальные сети</p></div>
           <div class='footer__socials-icons'>
+            <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
+            <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
+            <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>
+            <a href=""><img src="assets\socials\vk.svg" alt="vk" class=''></a>
+            <a href=""><img src="assets\socials\instagram.svg" alt="instagram" class=''></a>
+            <a href=""><img src="assets\socials\classmates.svg" alt="classmates" class=''></a>
+          </div>
+          <div class='footer__socials-icons-mobile'>
             <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
             <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
             <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>

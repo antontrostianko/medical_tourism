@@ -1,7 +1,6 @@
 //FAQ js
 let bod = document.getElementById("FAQ");
 
-let main_height = 980;
 let clickables = document.querySelectorAll(".clickable");
 let extContents = document.querySelectorAll(".question_extended");
 
@@ -17,7 +16,6 @@ clickables.forEach((elem, index) => {
         ext.style.maxHeight = ext.scrollHeight + "px";
         ext.style.opacity = 1;
       }, 10);
-      main_height += 493;
     } else {
       elem.textContent = "▼";
       ext.style.maxHeight = 0;
@@ -26,11 +24,7 @@ clickables.forEach((elem, index) => {
         ext.classList.remove("expanded");
         ext.style.display = "none";
       }, 500);
-      if (main_height !== 980) {
-        main_height -= 493;
-      }
     }
-    bod.style.height = main_height + "px";
   });
 });
 //Line and arrow js
@@ -54,6 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
     arrow.style.top = currentHeight + scrollY + 270 + "px";
   }, 500);
 });
+function onResize() {
+  const arrow = document.getElementById("arrow");
+  if (window.innerWidth < 1000) {
+    arrow.style.display = "none";
+  } else {
+    arrow.style.display = "block";
+  }
+}
+window.addEventListener("resize", onResize);
+onResize();
 const cookie_button = document.querySelector(".cookie-popup__button");
 const cookie_popup = document.querySelector("#cookie-popup");
 
@@ -113,4 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlides(slideIndex);
   }
   createSlider();
+});
+
+document.querySelector(".burger").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".header__nav").classList.toggle("open");
 });

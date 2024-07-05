@@ -18,18 +18,6 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.client-map__text2 {
-  position: absolute;
-  font-size: 3rem;
-  font-weight: 450;
-  text-align: center;
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 .client-map__first-part {
   display: flex;
