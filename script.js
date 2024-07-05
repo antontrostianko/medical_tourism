@@ -33,9 +33,9 @@ clickables.forEach((elem, index) => {
     bod.style.height = main_height + "px";
   });
 });
-
+//Line and arrow js
 const maxHeight = document.getElementsByTagName("body");
-let currentHeight = 550;
+let currentHeight = 420;
 line.style.height = currentHeight + scrollY + "px";
 document.addEventListener("scroll", function () {
   const line = document.getElementById("line");
@@ -45,14 +45,14 @@ document.addEventListener("scroll", function () {
     scrollY = maxHeight;
   }
   line.style.height = currentHeight + scrollY + "px";
-  arrow.style.top = currentHeight + scrollY + 270 + "px"; // Position arrow 20px below the line
+  arrow.style.top = currentHeight + scrollY + 270 + "px";
 });
 document.addEventListener("DOMContentLoaded", function () {
   const arrow = document.getElementById("arrow");
   setTimeout(() => {
     arrow.style.display = "block";
-    arrow.style.top = currentHeight + scrollY + 270 + "px"; // Adjust as needed
-  }, 500); // Delay of 1 second
+    arrow.style.top = currentHeight + scrollY + 270 + "px";
+  }, 500);
 });
 const cookie_button = document.querySelector(".cookie-popup__button");
 const cookie_popup = document.querySelector("#cookie-popup");
