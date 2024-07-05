@@ -90,3 +90,34 @@
   font-weight: 500;
   width: 40rem;
 }
+
+@media (max-width: 1000px) {
+  .services__three-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services__three-block-elem {
+    width: 45rem;
+    height: 60rem;
+  }
+
+  .services__three-block-elem-title {
+    font-size: 4.2rem;
+  }
+
+  .services__three-block-elem-text {
+    font-size: 2.3rem;
+  }
+
+  .services__last-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .services__last-block-elem {
+    width: 45rem;
+    height: 60rem;
+  }
+}
