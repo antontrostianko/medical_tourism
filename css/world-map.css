@@ -8,13 +8,17 @@
   font-size: inherit; /* Inherit font size from parent .world-map_title */
 }
 #world-map_map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
   -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
   box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
 }
 .world-map_copyright {
-  padding: 10px;
+  padding: 5px;
   font-size: 10px;
   color: gray;
 }
@@ -47,15 +51,19 @@
 }
 @media (max-width: 1000px) {
   #world-map_map {
-    display: none;
-  }
-  .world-map_copyright {
-    display: none;
-  }
-  .world-map_tooltip {
-    display: none;
+    zoom: 0.7;
   }
   .world-map_title {
     font-size: 28px;
+  }
+}
+@media (max-width: 800px) {
+  #world-map_map {
+    zoom: 0.6;
+  }
+}
+@media (max-width: 600px) {
+  #world-map_map {
+    zoom: 0.5;
   }
 }

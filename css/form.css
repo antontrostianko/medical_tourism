@@ -27,7 +27,7 @@
   row-gap: 4rem;
   margin-top: 3rem;
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 4rem 4rem;
   -webkit-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
   -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
   box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
@@ -116,5 +116,30 @@
   .form__title {
     font-size: 32px;
     font-weight: 700;
+  }
+
+  .form__description {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .form__wrapper-column-field input:not(.file) {
+    width: auto;
+    height: 35px;
+  }
+  .form label {
+    font-size: 12px;
+  }
+  .form__wrapper-column-field label {
+    width: 12rem;
+  }
+  .form__wrapper-column-field {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form__wrapper-column-field {
+    flex-wrap: wrap;
   }
 }

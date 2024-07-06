@@ -77,10 +77,14 @@
   color: #bababa;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   .newsletter__form {
-    width: 75%;
+    align-self: center;
+    width: 90%;
     flex-direction: column;
     gap: 5rem;
+  }
+  .newsletter__form-title {
+    text-align: center;
   }
 }

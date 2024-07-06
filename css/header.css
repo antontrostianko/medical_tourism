@@ -72,7 +72,7 @@
 
 @media (max-width: 1000px) {
   .header {
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 12rem;
   }
   .header__logo-text {
