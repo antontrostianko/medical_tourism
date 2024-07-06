@@ -77,9 +77,9 @@
   color: #bababa;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 100px) {
   .newsletter__form {
-    width: 80%;
+    width: 75%;
     flex-direction: column;
     gap: 5rem;
   }

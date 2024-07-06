@@ -10,6 +10,7 @@
   opacity: 0;
   z-index: 9;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -101,11 +102,12 @@
   transition-duration: 0.2s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .modal__wrapper {
     position: relative;
-    top: 200px;
+    top: 50vh;
     width: 75%;
+    min-width: 350px;
     margin: 30px auto;
     padding: 5rem 2rem;
   }

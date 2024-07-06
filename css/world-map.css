@@ -45,3 +45,17 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
+@media (max-width: 1000px) {
+  #world-map_map {
+    display: none;
+  }
+  .world-map_copyright {
+    display: none;
+  }
+  .world-map_tooltip {
+    display: none;
+  }
+  .world-map_title {
+    font-size: 28px;
+  }
+}

@@ -30,7 +30,6 @@ clickables.forEach((elem, index) => {
 //Line and arrow js
 const maxHeight = document.getElementsByTagName("body");
 let currentHeight = 420;
-line.style.height = currentHeight + scrollY + "px";
 document.addEventListener("scroll", function () {
   const line = document.getElementById("line");
   const arrow = document.getElementById("arrow");
@@ -41,23 +40,6 @@ document.addEventListener("scroll", function () {
   line.style.height = currentHeight + scrollY + "px";
   arrow.style.top = currentHeight + scrollY + 270 + "px";
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const arrow = document.getElementById("arrow");
-  setTimeout(() => {
-    arrow.style.display = "block";
-    arrow.style.top = currentHeight + scrollY + 270 + "px";
-  }, 500);
-});
-function onResize() {
-  const arrow = document.getElementById("arrow");
-  if (window.innerWidth < 1000) {
-    arrow.style.display = "none";
-  } else {
-    arrow.style.display = "block";
-  }
-}
-window.addEventListener("resize", onResize);
-onResize();
 const cookie_button = document.querySelector(".cookie-popup__button");
 const cookie_popup = document.querySelector("#cookie-popup");
 
